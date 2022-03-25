@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="SerilogWinUISample.Pages.ButtonsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="using:SerilogWinUISample.ViewModels"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.DataContext>
+        <viewmodels:ButtonsPageViewModel x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="1" Margin="0,0,0,10" Content="Click Me to log a Information" Command="{Binding InformationLogCommand}"/>
+        <Button Grid.Row="2" Margin="0,0,0,10" Content="Click Me to log a Warning" Command="{Binding WarningLogCommand}"/>
+        <Button Grid.Row="3" Margin="0,0,0,10" Content="Click Me to log a Error" Command="{Binding ErrorLogCommand}"/>
+        <Button Grid.Row="4" Margin="0,0,0,10" Content="Click Me to log a Fatal" Command="{Binding FatalLogCommand}"/>
+        <Button Grid.Row="5" Margin="0,0,0,10" Content="Open Log Folder" Command="{Binding OpenLogFolderCommand}"/>
+    </Grid>
+</Page>

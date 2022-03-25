@@ -50,3 +50,17 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+.vs/
+
+src/LoggerProject/bin/
+
+src/LoggerProject/obj/
+
+src/SerilogWinUISample/SerilogWinUISample/bin/
+
+src/SerilogWinUISample/SerilogWinUISample/obj/
+
+src/SerilogWinUISample/SerilogWinUISample (Package)/bin/
+
+src/SerilogWinUISample/SerilogWinUISample (Package)/obj/
